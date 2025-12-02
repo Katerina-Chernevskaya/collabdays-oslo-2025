@@ -28,7 +28,7 @@ az provider register --namespace Microsoft.Authorization --wait
 
 # Create Resource groups
 # You can change the region to your preferred one, but make sure the Azure OpenAI Service and Azure AI Search semantic ranker are available in that region.
-az group create -l swedencentral -n ns25-demo-rg
+az group create -l swedencentral -n cd25-demo-rg
 
 # Check available Azure OpenAI models quotas
 az cognitiveservices usage list -l swedencentral --query "[?contains(name.value, '4.1') || contains(name.value, 'ada-002')]"
@@ -37,4 +37,4 @@ az cognitiveservices usage list -l swedencentral --query "[?contains(name.value,
 # EXAMPLE: deploymentPrincipalId=00000000-0000-0000-0000-000000000000
 # REPLACE: <YOUR_PRINCIPAL_ID>
 # The deployment may take up to 10 minutes to complete
-az deployment group create --resource-group ns25-demo-rg --template-file ".\labs\lab-6-azure-recourses\infra\template.bicep" --parameters name=nsdemo deploymentPrincipalId=<YOUR_PRINCIPAL_ID>
+az deployment group create --resource-group cd25-demo-rg --template-file ".\labs\lab-06-deploy-azure-resources\infra\template.bicep" --parameters name=cddemo deploymentPrincipalId=<YOUR_PRINCIPAL_ID>
