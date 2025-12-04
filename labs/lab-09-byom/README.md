@@ -41,11 +41,11 @@ You’ll deploy a base model in AI Foundry, collect Target URI, Key, and Name, t
 ## 🛠️ Instructions
 
 1. Go to [https://ai.azure.com/](https://ai.azure.com/) and open the project created earlier.
-2. Open **Models + endpoints** and deploy a model of your choice (for example, `grok-3`).
+2. Open **Build** -> **Models** and deploy a model of your choice (for example, `grok-3`).
 ![Grok deploy](../../assets/9-grok-deploy.png)
-3. Select **Customize** if needed, then **Deploy**.
+3. Customize if needed, then **Deploy**.
 4. From the model details page, copy:
-    - Target URI (endpoint).
+    - Target URI.
     - Key.
     - Name.
     ![Model details](../../assets/9-model-details.png)
