@@ -51,14 +51,14 @@ Review the checklist below. You should have completed these steps **before the w
 *Now let’s fork the repository and clone it locally so you can work with lab files in your own environment.*
 
 - Create a folder on your laptop where you'll clone the repository. For example, you can create a folder named `nordic-summit-agent` on your C: drive.
-1. Open the **GitHub repo** in your browser: [https://github.com/Katerina-Chernevskaya/nordic-summit-25-workshop](https://github.com/Katerina-Chernevskaya/nordic-summit-25-workshop)
+1. Open the **GitHub repo** in your browser: [https://github.com/Katerina-Chernevskaya/collabdays-oslo-2025](https://github.com/Katerina-Chernevskaya/collabdays-oslo-2025)
 2. Click the **Fork** button in the top right corner and create a copy in your own GitHub account.
 3. In your forked repository, click the **Code** button and copy the **Clone URL** (HTTPS).
 ![Clone URL](../../assets/0-clone-url.png)
 4. Open **PowerShell** or any terminal of your choice.
 5. Navigate to a working directory where you want to clone the labs using `cd` command. For example:
    ```
-   cd c:\nordic-summit-agent
+   cd c:\collabdays-oslo-agent
    ```
 6. Clone your forked repo (replace with the URL you copied before):
    ```
@@ -72,4 +72,5 @@ Review the checklist below. You should have completed these steps **before the w
 ***
 
 ✅ You’re now ready to start the workshop!
+
 
