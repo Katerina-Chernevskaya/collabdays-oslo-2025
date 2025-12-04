@@ -97,32 +97,32 @@ Follow [budget.azcli](./infra/budget.azcli) in the infra directory. Run each com
    - In the top search bar type `Resource` and select **Resource groups**.
    - Click **Create** and enter the following information:
       - Select subscription.
-      - Enter **resource group name**: `nordic-summit-rg`.
+      - Enter **resource group name**: `collabdays-oslo-rg`.
       - Select **region**: `Sweden Central`.
    - Click **Review + create** and click **Create** on the next screen.
-3. Create **Azure AI Foundry**.
-   - In the top search bar type `Foundry` and select **Azure AI Foundry**.
-   - Navigate to **Azure AI Foundry** section, and click **Create**.
+3. Create **Microsoft Foundry**.
+   - In the top search bar type `Foundry` and select **Microsoft Foundry**.
+   - Navigate to **Foundry** section, and click **Create**.
    - Enter the following information:
       - Select subscription.
-      - Select **resource group**: `nordic-summit-rg`.
-      - Enter **name**: `aif-nordicsummit`.
+      - Select **resource group**: `collabdays-oslo-rg`.
+      - Enter **name**: `aif-collabdaysoslo`.
       - Select **Location**: `Sweden Central`.
+   - Click **Next** and create resources for `Key Vault`, `Application Insights` and `Blob Storage`.
    - Click **Next** till **Review + submit** page.
    - Check if everything is correct and click **Create**.
-   - Once the resource created click **Go to resource** and on the opened page click **Go to Azure AI Foundry portal**.
-   - Navigate to **Models + endpoints** and select **Deploy base model** under the **Deploy model** drop down.
-   ![](../../assets/6-deploy-model.png)
-   - Select `gpt-4.1` model and click **Confirm**.
-   - Click **Customize** and update the **Tokens per Minute Rate Limit** if required.
+   - Once the resource created click **Go to resource** and on the opened page click **Go to Foundry portal**.
+   - Navigate to **Build** -> **Models** and select **Deploy base model**.
+   - Select `gpt-4.1` (or your desired model) model and click **Confirm**.
+   - Under **Deploy** click **Custom settings** and update the **Tokens per Minute Rate Limit** if required.
    - Click **Deploy**.
-   - Go back to **Models + endpoints** page and repeat steps to deploy `text-embedding-ada-002 model`.
-4. Create **Azure Blob Storage** recourse:
+   - Go back to **Models** page and repeat steps to deploy `text-embedding-ada-002 model`.
+4. (optional - if you didn't create this resource on the previous step) Create **Azure Blob Storage** recourse:
    - In the top search bar type `storage` and select **Storage accounts** resource.
    - Click **Create** and enter the following information:
       - Select subscription.
-      - Select **resource group**: `nordic-summit-rg`.
-      - Enter **resource name**: `stnordicsummit`.
+      - Select **resource group**: `collabdays-oslo-rg`.
+      - Enter **resource name**: `stcollabdaysoslo`.
       - Select **Location**: `Sweden Central`.
       - Select P**referred storage type**: `Azure Blob Storage or Azure Data Lake Storage Gen 2`.
       - Keep **Performance** `Standard`.
@@ -131,14 +131,14 @@ Follow [budget.azcli](./infra/budget.azcli) in the infra directory. Run each com
    - When the recourse will be deployed - click **Go to resource**.
    - *(Optional)* On the **Overview** page in the **Properties** section for the **Blob anonymous access** click **Disable**. On the opened page enable **Allow Blob anonymous access** and click **Save**.
    - Navigate to **Containers** and click **Add container**.
-   - Enter **Name**: `ns-container`.
+   - Enter **Name**: `cd-container`.
    - *(Optional)* Select **Anonymous access level** - `Container` and click **Create**.
 5. Create **Azure AI Search** recourse:
    - In the top search bar type `search` and select **AI Search** resource.
    - Click Create and fill the form:
       - Select subscription.
-      - Select **resource group**: `nordic-summit-rg`.
-      - Enter **resource name**: `ais-nordicsummit`.
+      - Select **resource group**: `collabdays-oslo-rg`.
+      - Enter **resource name**: `ais-collabdays-oslo`.
       - Select **Location**: `Sweden Central`.
       - For the **Price tier** select **Change Pricing Tier** and select `Free` or 
       `Basic`.
